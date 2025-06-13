@@ -1,159 +1,330 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ASUS TUF A15 Savings & Specs</title>
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASUS TUF A15 Savings &amp; Specs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#5D5CDE',
+            'asus-orange': '#FF6600',
+            'asus-dark': '#1a1a1a'
+          }
+        }
+      }
+    }
+  </script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-      margin: 40px auto;
-      max-width: 800px;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      background: #ffffff;
+      font-family: 'Inter', sans-serif;
     }
-    h1, h2 {
-      text-align: center;
-      color: #1a73e8;
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
-    table {
+    
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    
+    .animate-fade-in {
+      animation: fadeIn 0.6s ease-out;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .shine-effect {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .shine-effect::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
       width: 100%;
-      border-collapse: collapse;
-      margin: 24px 0;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
     }
-    th, td {
-      text-align: left;
-      padding: 12px;
-      border-bottom: 1px solid #ddd;
-    }
-    th {
-      background-color: #f1f3f4;
-      font-weight: 600;
-    }
-    .highlight {
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #0f9d58;
-    }
-    .note {
-      font-style: italic;
-      color: #555;
-      margin-top: 16px;
-    }
-    .product-image {
-      text-align: center;
-      margin: 20px 0;
-    }
-    .product-image img {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .icon-block {
-      display: flex;
-      align-items: center;
-      margin: 10px 0;
-    }
-    .icon-block img {
-      width: 40px;
-      height: 40px;
-      margin-right: 12px;
+    
+    .shine-effect:hover::before {
+      left: 100%;
     }
   </style>
+  <script>
+    // Dark mode support
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+        if (event.matches) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    });
+  </script>
 </head>
-<body>
-
-  <h1>ASUS TUF Gaming A15 (FA507NUR-LP051W)</h1>
-
-  <div class="product-image">
-    <img src="asus-tuf-image.jpg" alt="ASUS TUF A15 Product Image">
+<body class="bg-gray-50 dark:bg-gray-900 min-h-screen">
+  
+  <!-- Header Section -->
+  <div class="gradient-bg text-white py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center animate-fade-in">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">ASUS TUF Gaming A15</h1>
+        <p class="text-xl opacity-90">FA507NUR-LP051W</p>
+        <div class="mt-6 inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-2">
+          <span class="text-2xl">🎮</span>
+          <span class="font-medium">Gaming Performance Unleashed</span>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <h2>💸 Purchase Summary</h2>
-  <table>
-    <tr><th>Description</th><th>Amount (PHP)</th></tr>
-    <tr><td>Original SRP</td><td>₱71,995.00</td></tr>
-    <tr><td>Discounted Purchase Price</td><td>₱58,950.00</td></tr>
-    <tr><td><strong>Hardware Discount</strong></td><td><strong>₱13,045.00</strong></td></tr>
-  </table>
+  <div class="max-w-6xl mx-auto px-4 -mt-8 relative z-10">
+    
+    <!-- Product Image Section -->
+    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8 mb-8 card-hover animate-fade-in">
+      <div class="text-center">
+        <img src="asus-tuf-image.jpg" alt="ASUS TUF A15 Product Image" class="w-full max-w-3xl mx-auto rounded-xl shadow-lg shine-effect">
+      </div>
+    </div>
 
-  <h2>🎁 Freebies Included</h2>
-  <table>
-    <tr><th>Item</th><th>Estimated Value</th></tr>
-    <tr><td>ASUS TUF Gaming Backpack</td><td>₱1,500.00</td></tr>
-    <tr><td>Logitech MK240 Wireless Keyboard + Mouse</td><td>₱1,445.00</td></tr>
-    <tr><td><strong>Total Value of Freebies</strong></td><td><strong>₱2,945.00</strong></td></tr>
-  </table>
+    <!-- Main Content Grid -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-12">
+      
+      <!-- Purchase Summary -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 card-hover">
+        <div class="flex items-center mb-6">
+          <span class="text-3xl mr-3">💸</span>
+          <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Purchase Summary</h2>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="flex justify-between items-center py-3 border-b border-gray-200 dark:border-gray-600">
+            <span class="text-gray-600 dark:text-gray-300">Original SRP</span>
+            <span class="font-semibold text-gray-800 dark:text-white">₱71,995.00</span>
+          </div>
+          <div class="flex justify-between items-center py-3 border-b border-gray-200 dark:border-gray-600">
+            <span class="text-gray-600 dark:text-gray-300">Purchase Price</span>
+            <span class="font-semibold text-green-600">₱58,950.00</span>
+          </div>
+          <div class="flex justify-between items-center py-3 bg-green-50 dark:bg-green-900/20 rounded-lg px-4">
+            <span class="font-bold text-green-800 dark:text-green-300">Hardware Discount</span>
+            <span class="font-bold text-green-600 text-xl">₱13,045.00</span>
+          </div>
+        </div>
+      </div>
 
-  <h2>📊 Total Savings</h2>
-  <table>
-    <tr><td>Total Cash Saved</td><td>₱13,045.00</td></tr>
-    <tr><td>+ Freebies Value</td><td>₱2,945.00</td></tr>
-    <tr><td class="highlight">🎯 Grand Total Saved</td><td class="highlight">₱15,990.00</td></tr>
-    <tr><td>% Savings from SRP</td><td>~22.2%</td></tr>
-  </table>
+      <!-- Freebies -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 card-hover">
+        <div class="flex items-center mb-6">
+          <span class="text-3xl mr-3">🎁</span>
+          <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Freebies Included</h2>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="flex justify-between items-center py-3 border-b border-gray-200 dark:border-gray-600">
+            <span class="text-gray-600 dark:text-gray-300">ASUS TUF Gaming Backpack</span>
+            <span class="font-semibold text-primary">₱1,500.00</span>
+          </div>
+          <div class="flex justify-between items-center py-3 border-b border-gray-200 dark:border-gray-600">
+            <span class="text-gray-600 dark:text-gray-300">Logitech MK240 Wireless Kit</span>
+            <span class="font-semibold text-primary">₱1,445.00</span>
+          </div>
+          <div class="flex justify-between items-center py-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg px-4">
+            <span class="font-bold text-blue-800 dark:text-blue-300">Total Freebies Value</span>
+            <span class="font-bold text-primary text-xl">₱2,945.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <h2>⚙️ Detailed Specifications</h2>
-  <ul>
-    <li><strong>Processor:</strong> AMD Ryzen 7 7435HS (3.1GHz, up to 4.5GHz, 8C/16T)</li>
-    <li><strong>Display:</strong> 15.6” FHD (1920x1080) 144Hz IPS-Level Anti-glare, 250nits</li>
-    <li><strong>Memory:</strong> 16GB DDR5 4800MHz (Upgradeable to 32GB)</li>
-    <li><strong>Storage:</strong> 512GB PCIe 4.0 NVMe M.2 SSD</li>
-    <li><strong>Graphics:</strong> NVIDIA GeForce RTX 4050 Laptop GPU</li>
-    <li><strong>Operating System:</strong> Windows 11 Home</li>
-    <li><strong>Keyboard:</strong> 1-Zone RGB Backlit Chiclet</li>
-    <li><strong>Webcam:</strong> 720p HD</li>
-    <li><strong>Ports:</strong> 2x USB 3.2 Gen 1 Type-A, 1x USB 3.2 Gen 2 Type-C, 1x Type-C w/ DisplayPort, RJ45 LAN</li>
-    <li><strong>Connectivity:</strong> Wi-Fi 6, Bluetooth 5.3</li>
-    <li><strong>Battery:</strong> 90WHrs 4-cell Li-ion</li>
-    <li><strong>Charger:</strong> 240W AC Adapter</li>
-    <li><strong>Bundle:</strong> ASUS TUF Gaming Backpack</li>
-  </ul>
+    <!-- Total Savings Highlight -->
+    <div class="bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl shadow-xl p-8 mb-12 text-white card-hover">
+      <div class="text-center">
+        <div class="flex items-center justify-center mb-4">
+          <span class="text-4xl mr-3">🎯</span>
+          <h2 class="text-3xl font-bold">Total Savings</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6 mt-8">
+          <div class="bg-white/20 backdrop-blur-sm rounded-xl p-4">
+            <div class="text-2xl font-bold">₱13,045</div>
+            <div class="text-sm opacity-90">Cash Saved</div>
+          </div>
+          <div class="bg-white/20 backdrop-blur-sm rounded-xl p-4">
+            <div class="text-2xl font-bold">₱2,945</div>
+            <div class="text-sm opacity-90">Freebies Value</div>
+          </div>
+          <div class="bg-white/30 backdrop-blur-sm rounded-xl p-4 border-2 border-white/40">
+            <div class="text-3xl font-bold">₱15,990</div>
+            <div class="text-sm opacity-90">Grand Total Saved</div>
+            <div class="text-lg font-semibold mt-1">22.2% Off SRP</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <h2>🚀 Performance for Your Needs</h2>
+    <!-- Specifications -->
+    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 mb-12 card-hover">
+      <div class="flex items-center mb-8">
+        <span class="text-3xl mr-3">⚙️</span>
+        <h2 class="text-3xl font-bold text-gray-800 dark:text-white">Technical Specifications</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="space-y-4">
+          <div class="spec-item">
+            <div class="font-semibold text-gray-800 dark:text-white mb-1">Processor</div>
+            <div class="text-gray-600 dark:text-gray-300">AMD Ryzen 7 7435HS (3.1GHz, up to 4.5GHz, 8C/16T)</div>
+          </div>
+          <div class="spec-item">
+            <div class="font-semibold text-gray-800 dark:text-white mb-1">Display</div>
+            <div class="text-gray-600 dark:text-gray-300">15.6" FHD 144Hz IPS Anti-glare, 250nits</div>
+          </div>
+          <div class="spec-item">
+            <div class="font-semibold text-gray-800 dark:text-white mb-1">Memory</div>
+            <div class="text-gray-600 dark:text-gray-300">16GB DDR5 4800MHz (Upgradeable to 32GB)</div>
+          </div>
+          <div class="spec-item">
+            <div class="font-semibold text-gray-800 dark:text-white mb-1">Storage</div>
+            <div class="text-gray-600 dark:text-gray-300">512GB PCIe 4.0 NVMe M.2 SSD</div>
+          </div>
+          <div class="spec-item">
+            <div class="font-semibold text-gray-800 dark:text-white mb-1">Graphics</div>
+            <div class="text-gray-600 dark:text-gray-300">NVIDIA GeForce RTX 4050 Laptop GPU</div>
+          </div>
+          <div class="spec-item">
+            <div class="font-semibold text-gray-800 dark:text-white mb-1">Operating System</div>
+            <div class="text-gray-600 dark:text-gray-300">Windows 11 Home</div>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="spec-item">
+            <div class="font-semibold text-gray-800 dark:text-white mb-1">Keyboard</div>
+            <div class="text-gray-600 dark:text-gray-300">1-Zone RGB Backlit Chiclet</div>
+          </div>
+          <div class="spec-item">
+            <div class="font-semibold text-gray-800 dark:text-white mb-1">Webcam</div>
+            <div class="text-gray-600 dark:text-gray-300">720p HD</div>
+          </div>
+          <div class="spec-item">
+            <div class="font-semibold text-gray-800 dark:text-white mb-1">Connectivity</div>
+            <div class="text-gray-600 dark:text-gray-300">Wi-Fi 6, Bluetooth 5.3</div>
+          </div>
+          <div class="spec-item">
+            <div class="font-semibold text-gray-800 dark:text-white mb-1">Ports</div>
+            <div class="text-gray-600 dark:text-gray-300">2x USB 3.2 Gen 1 Type-A, 1x USB 3.2 Gen 2 Type-C, 1x Type-C w/ DisplayPort, RJ45 LAN</div>
+          </div>
+          <div class="spec-item">
+            <div class="font-semibold text-gray-800 dark:text-white mb-1">Battery &amp; Power</div>
+            <div class="text-gray-600 dark:text-gray-300">90WHrs 4-cell Li-ion, 240W AC Adapter</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <div class="icon-block">
-    <img src="blender-icon.png" alt="Blender Icon">
-    <div><strong>Blender 3D Simulations:</strong> Can handle fluid, smoke, and cloth simulations at medium-high quality with GPU acceleration (RTX 4050).</div>
+    <!-- Performance Highlights -->
+    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 mb-12 card-hover">
+      <div class="flex items-center mb-8">
+        <span class="text-3xl mr-3">🚀</span>
+        <h2 class="text-3xl font-bold text-gray-800 dark:text-white">Performance Highlights</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Creative Work -->
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
+            <img src="blender-icon.png" alt="Blender Icon" class="w-12 h-12 flex-shrink-0">
+            <div>
+              <div class="font-semibold text-gray-800 dark:text-white mb-2">Blender 3D Simulations</div>
+              <div class="text-gray-600 dark:text-gray-300 text-sm">Handle fluid, smoke, and cloth simulations at medium-high quality with GPU acceleration (RTX 4050).</div>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
+            <img src="unreal-icon.png" alt="Unreal Engine Icon" class="w-12 h-12 flex-shrink-0">
+            <div>
+              <div class="font-semibold text-gray-800 dark:text-white mb-2">Unreal Engine 5</div>
+              <div class="text-gray-600 dark:text-gray-300 text-sm">Capable of real-time rendering, Nanite, and Lumen workflows for beginner to intermediate development.</div>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
+            <img src="programming-icon.png" alt="Programming Icon" class="w-12 h-12 flex-shrink-0">
+            <div>
+              <div class="font-semibold text-gray-800 dark:text-white mb-2">Programming &amp; Development</div>
+              <div class="text-gray-600 dark:text-gray-300 text-sm">Ideal for compiling large codebases, multitasking with IDEs, and running local development servers.</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Gaming & Entertainment -->
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
+            <img src="gaming-icon.png" alt="Gaming Icon" class="w-12 h-12 flex-shrink-0">
+            <div>
+              <div class="font-semibold text-gray-800 dark:text-white mb-2">High-Performance Gaming</div>
+              <div class="text-gray-600 dark:text-gray-300 text-sm">60-144 FPS at Medium to High settings on AAA titles at 1080p (GTA V, Valorant, Overwatch, Apex, Fortnite).</div>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
+            <img src="emulation-icon.png" alt="Emulation Icon" class="w-12 h-12 flex-shrink-0">
+            <div>
+              <div class="font-semibold text-gray-800 dark:text-white mb-2">Console Emulation</div>
+              <div class="text-gray-600 dark:text-gray-300 text-sm">Emulate modern consoles (Switch via Yuzu, PS3 via RPCS3) at stable frame rates.</div>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-4 p-4 bg-gray-50 dark:bg-gray-700 rounded-xl">
+            <img src="multitasking-icon.png" alt="Multitasking Icon" class="w-12 h-12 flex-shrink-0">
+            <div>
+              <div class="font-semibold text-gray-800 dark:text-white mb-2">Heavy Multitasking</div>
+              <div class="text-gray-600 dark:text-gray-300 text-sm">Run multiple tools simultaneously with 16GB DDR5 RAM and 512GB Gen 4 SSD for top-tier speed.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Cooling Section -->
+      <div class="mt-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-xl">
+        <div class="flex items-start space-x-4">
+          <img src="cooling-icon.png" alt="Cooling Icon" class="w-12 h-12 flex-shrink-0">
+          <div>
+            <div class="font-semibold text-gray-800 dark:text-white mb-2">Superior Cooling &amp; Longevity</div>
+            <div class="text-gray-600 dark:text-gray-300">ASUS TUF thermal design with dual-fan system maintains optimal temperatures under sustained load, ensuring consistent performance and extended device lifespan.</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="icon-block">
-    <img src="unreal-icon.png" alt="Unreal Engine Icon">
-    <div><strong>Unreal Engine 5:</strong> Capable of handling real-time rendering, Nanite, and Lumen workflows smoothly for beginner to intermediate dev work.</div>
+  <!-- Footer -->
+  <div class="bg-gray-800 dark:bg-gray-900 text-white py-12 mt-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <div class="flex items-center justify-center mb-4">
+        <span class="text-2xl mr-2">⚡</span>
+        <span class="text-xl font-semibold">Ready to Game, Create, and Develop</span>
+      </div>
+      <p class="text-gray-300">ASUS TUF Gaming A15 - Built to Last, Designed to Perform</p>
+    </div>
   </div>
 
-  <div class="icon-block">
-    <img src="gaming-icon.png" alt="Gaming Icon">
-    <div><strong>Gaming:</strong> 60-144 FPS at Medium to High settings on AAA titles at 1080p (GTA V, Valorant, Overwatch, Apex, Fortnite).</div>
-  </div>
 
-  <h2>🛠️ More Performance Highlights</h2>
 
-  <div class="icon-block">
-    <img src="programming-icon.png" alt="Programming Icon">
-    <div><strong>Programming & Development:</strong> Ideal for compiling large codebases (e.g., C++, Rust), multitasking with IDEs like VS Code, JetBrains Suite, and running local development servers. DDR5 and 8-core CPU ensure low latency and responsiveness.</div>
-  </div>
-
-  <div class="icon-block">
-    <img src="emulation-icon.png" alt="Emulation Icon">
-    <div><strong>Emulation:</strong> Capable of emulating modern consoles (e.g., Switch via Yuzu, PS3 via RPCS3) at stable frame rates thanks to strong single-core and GPU performance.</div>
-  </div>
-
-  <div class="icon-block">
-    <img src="multitasking-icon.png" alt="Multitasking Icon">
-    <div><strong>Heavy Multitasking:</strong> Seamless experience running multiple tools simultaneously (e.g., browser + Blender + terminals + streaming). 16GB DDR5 RAM and 512GB Gen 4 SSD ensure top-tier multitasking speed.</div>
-  </div>
-
-  <div class="icon-block">
-    <img src="cooling-icon.png" alt="Cooling Icon">
-    <div><strong>Cooling & Longevity:</strong> ASUS TUF thermal design and dual-fan system keeps temperatures stable even under sustained load, extending both performance and device life.</div>
-  </div>
-</body>
-
-</html>
+</body></html>
