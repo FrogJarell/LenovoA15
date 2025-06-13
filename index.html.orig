@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ASUS TUF A15 Savings & Specs</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #1a73e8;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f1f3f4;
+      font-weight: 600;
+    }
+    .highlight {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #0f9d58;
+    }
+    .note {
+      font-style: italic;
+      color: #555;
+      margin-top: 16px;
+    }
+    .product-image {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .product-image img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .icon-block {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+    .icon-block img {
+      width: 40px;
+      height: 40px;
+      margin-right: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ASUS TUF Gaming A15 (FA507NUR-LP051W)</h1>
+
+  <div class="product-image">
+    <img src="asus-tuf-image.jpg" alt="ASUS TUF A15 Product Image">
+  </div>
+
+  <h2>💸 Purchase Summary</h2>
+  <table>
+    <tr><th>Description</th><th>Amount (PHP)</th></tr>
+    <tr><td>Original SRP</td><td>₱71,995.00</td></tr>
+    <tr><td>Discounted Purchase Price</td><td>₱58,950.00</td></tr>
+    <tr><td><strong>Hardware Discount</strong></td><td><strong>₱13,045.00</strong></td></tr>
+  </table>
+
+  <h2>🎁 Freebies Included</h2>
+  <table>
+    <tr><th>Item</th><th>Estimated Value</th></tr>
+    <tr><td>ASUS TUF Gaming Backpack</td><td>₱1,500.00</td></tr>
+    <tr><td>Logitech MK240 Wireless Keyboard + Mouse</td><td>₱1,445.00</td></tr>
+    <tr><td><strong>Total Value of Freebies</strong></td><td><strong>₱2,945.00</strong></td></tr>
+  </table>
+
+  <h2>📊 Total Savings</h2>
+  <table>
+    <tr><td>Total Cash Saved</td><td>₱13,045.00</td></tr>
+    <tr><td>+ Freebies Value</td><td>₱2,945.00</td></tr>
+    <tr><td class="highlight">🎯 Grand Total Saved</td><td class="highlight">₱15,990.00</td></tr>
+    <tr><td>% Savings from SRP</td><td>~22.2%</td></tr>
+  </table>
+
+  <h2>⚙️ Detailed Specifications</h2>
+  <ul>
+    <li><strong>Processor:</strong> AMD Ryzen 7 7435HS (3.1GHz, up to 4.5GHz, 8C/16T)</li>
+    <li><strong>Display:</strong> 15.6” FHD (1920x1080) 144Hz IPS-Level Anti-glare, 250nits</li>
+    <li><strong>Memory:</strong> 16GB DDR5 4800MHz (Upgradeable to 32GB)</li>
+    <li><strong>Storage:</strong> 512GB PCIe 4.0 NVMe M.2 SSD</li>
+    <li><strong>Graphics:</strong> NVIDIA GeForce RTX 4050 Laptop GPU</li>
+    <li><strong>Operating System:</strong> Windows 11 Home</li>
+    <li><strong>Keyboard:</strong> 1-Zone RGB Backlit Chiclet</li>
+    <li><strong>Webcam:</strong> 720p HD</li>
+    <li><strong>Ports:</strong> 2x USB 3.2 Gen 1 Type-A, 1x USB 3.2 Gen 2 Type-C, 1x Type-C w/ DisplayPort, RJ45 LAN</li>
+    <li><strong>Connectivity:</strong> Wi-Fi 6, Bluetooth 5.3</li>
+    <li><strong>Battery:</strong> 90WHrs 4-cell Li-ion</li>
+    <li><strong>Charger:</strong> 240W AC Adapter</li>
+    <li><strong>Bundle:</strong> ASUS TUF Gaming Backpack</li>
+  </ul>
+
+  <h2>🚀 Performance for Your Needs</h2>
+
+  <div class="icon-block">
+    <img src="blender-icon.png" alt="Blender Icon">
+    <div><strong>Blender 3D Simulations:</strong> Can handle fluid, smoke, and cloth simulations at medium-high quality with GPU acceleration (RTX 4050).</div>
+  </div>
+
+  <div class="icon-block">
+    <img src="unreal-icon.png" alt="Unreal Engine Icon">
+    <div><strong>Unreal Engine 5:</strong> Capable of handling real-time rendering, Nanite, and Lumen workflows smoothly for beginner to intermediate dev work.</div>
+  </div>
+
+  <div class="icon-block">
+    <img src="gaming-icon.png" alt="Gaming Icon">
+    <div><strong>Gaming:</strong> 60-144 FPS at Medium to High settings on AAA titles at 1080p (GTA V, Valorant, Overwatch, Apex, Fortnite).</div>
+  </div>
+
+  <h2>🛠️ More Performance Highlights</h2>
+
+  <div class="icon-block">
+    <img src="programming-icon.png" alt="Programming Icon">
+    <div><strong>Programming & Development:</strong> Ideal for compiling large codebases (e.g., C++, Rust), multitasking with IDEs like VS Code, JetBrains Suite, and running local development servers. DDR5 and 8-core CPU ensure low latency and responsiveness.</div>
+  </div>
+
+  <div class="icon-block">
+    <img src="emulation-icon.png" alt="Emulation Icon">
+    <div><strong>Emulation:</strong> Capable of emulating modern consoles (e.g., Switch via Yuzu, PS3 via RPCS3) at stable frame rates thanks to strong single-core and GPU performance.</div>
+  </div>
+
+  <div class="icon-block">
+    <img src="multitasking-icon.png" alt="Multitasking Icon">
+    <div><strong>Heavy Multitasking:</strong> Seamless experience running multiple tools simultaneously (e.g., browser + Blender + terminals + streaming). 16GB DDR5 RAM and 512GB Gen 4 SSD ensure top-tier multitasking speed.</div>
+  </div>
+
+  <div class="icon-block">
+    <img src="cooling-icon.png" alt="Cooling Icon">
+    <div><strong>Cooling & Longevity:</strong> ASUS TUF thermal design and dual-fan system keeps temperatures stable even under sustained load, extending both performance and device life.</div>
+  </div>
+</body>
+
+</html>
